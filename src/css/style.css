@@ -1,0 +1,161 @@
+body {
+    background-image: url('./src/images/bg-desktop.svg') ;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-size: 11px; text-align: center;
+}
+
+.logo {
+    display: flex;
+    margin: 50px auto 80px 90px;
+}
+.logo img {
+    width: 190px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+
+
+}
+
+.image {
+    width: 630px;
+    margin-left: 90px;   
+
+}
+
+.textos {    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    left: 750px;
+}
+
+.container .textos h1 {
+    width: 440px;
+    text-align: left;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.container .textos p {
+    width: 570px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.container .textos .btn-register {
+    align-self: flex-start;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 12px 50px;
+    transition: 0.3s;
+}
+
+.container .textos .btn-register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    
+}
+
+
+.footer {
+    width: 200px;
+    display: flex;
+    position: relative;
+    bottom: -120px;
+    left: 400px;
+   
+
+}
+.social {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+.fa-stack {
+    width: 100px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 900px) {
+        body {
+            background-image: url('./src/images/bg-desktop.svg') ;
+            background-color: hsl(257, 40%, 49%);
+            
+        }
+
+        .logo {
+            margin-bottom: 90px;
+        }
+        
+           .container {
+            display: flex;
+           }
+
+           .image {
+            margin: auto 70px auto 70px;
+            display: flex;
+            position: absolute;
+           }
+
+           .textos {
+            padding: 0;
+            margin: auto ;
+            position: relative;
+            top: 500px;
+            left: 50px;
+           }
+
+           .container .textos h1 {
+            margin: auto 175px auto 55px;
+            text-align: center;
+           }
+
+           .container .textos p {
+            text-align: center;
+
+           }
+
+           .btn-register {
+            position: relative;
+            bottom: -50px;
+            left: 205px;
+
+           }
+
+
+           .footer {
+            position: absolute;
+           }
+
+           .fa-stack {
+            position: relative;
+            right: 203px;
+           }
+            
+    }
+  
+  
+
+    
